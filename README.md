@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MQTT Publisher App
 
 A full-featured web-based MQTT publisher. Connect to any broker, configure QoS, retain, LWT, authentication, payload format/encoding, and stream device telemetry continuously.
@@ -293,3 +294,6 @@ publisher-app/
 ## License
 
 Private / internal use.
+=======
+# MQTTPublisher
+>>>>>>> 5a152c920f2d93d67b7d28ba16ed4d87599fdc74
