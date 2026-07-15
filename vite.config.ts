@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, type ViteDevServer } from 'vite'
 import react from '@vitejs/plugin-react'
 import { createApp } from './server/createApp.js'
 
@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     {
       name: 'mqtt-api',
-      configureServer(server) {
+      configureServer(server: ViteDevServer) {
         server.middlewares.use(api)
         console.log('MQTT API embedded in Vite dev server at /api/*')
       },
